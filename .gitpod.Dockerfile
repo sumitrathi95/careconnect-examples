@@ -11,3 +11,6 @@ RUN mkdir -p /tmp/mongodb && \
     rm -rf /tmp/mongodb && \
     sudo mkdir -p /data/db && \
     sudo chown gitpod:gitpod -R /data/db
+    
+RUN sudo apt-get install -y mongodb-org-tools
+    
