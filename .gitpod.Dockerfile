@@ -7,4 +7,6 @@ RUN wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.21
 RUN sudo mkdir -p /data/db \
    && sudo chown gitpod:gitpod -R /data/db \
    && sudo chown gitpod:gitpod -R /usr/local/bin/mongo*
+
+RUN mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork
   
