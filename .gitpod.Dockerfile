@@ -1,8 +1,8 @@
 FROM gitpod/workspace-full
 
 
-RUN mkdir -p /tmp/mongodb && \
-    cd /tmp/mongodb && \
+RUN mkdir -p /tmp/mongodbtools && \
+    cd /tmp/mongodbtools && \
     wget -qOmongodbtools.tgz https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu1604-ppc64le-100.2.1.tgz && \
     tar xf mongodbtools.tgz && \
     cd mongodbtools-* && \
