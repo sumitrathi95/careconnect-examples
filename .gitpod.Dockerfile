@@ -2,7 +2,7 @@ FROM gitpod/workspace-mongodb
 
 RUN mkdir -p /tmp/mongodb && \
     cd /tmp/mongodb && \
-    wget -qOmongodb.tgz https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu1604-ppc64le-100.2.1.tgz && \
+    wget -qOmongodb.tgz https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2004-x86_64-100.2.1.tgz && \
     tar xf mongodb.tgz && \
     cd mongodb-* && \
     sudo cp bin/* /usr/local/bin/ && \
