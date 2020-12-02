@@ -6,5 +6,5 @@ RUN wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.21
     
 RUN sudo mkdir -p /data/db \
    && sudo chown gitpod:gitpod -R /data/db \
-   && chown gitpod:gitpod -R /usr/local/bin/mongo*
+   && sudo chown gitpod:gitpod -R /usr/local/bin/mongo*
   
